@@ -1,0 +1,10 @@
+<div class="w-full">
+  <h1 class="font-bold text-4xl">Articles</h1>
+
+  <%= render "new_button" %>
+
+  <%= turbo_frame_tag 'articles' do %>
+    <%= render @articles %>
+    <%= paginate @articles %>
+  <% end %>
+</div>
