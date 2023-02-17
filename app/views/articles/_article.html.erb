@@ -7,7 +7,8 @@
 <%
 =end
 %>
-  <p class="text-2xl"><%= article.content %></p>
+  <p class="text-2xl mb-2"><%= article.content %></p>
+  <p class="text-md mb-2"><%= article.created_at.to_date %></p>
 
     <%# articleの詳細ボタン %>
     <%#= link_to "Show", article_path(article, detail: 1), class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
